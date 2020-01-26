@@ -38,3 +38,13 @@ for item in ingredients:
     parsed_ingredients.append(tmp)
 
 print(parsed_ingredients)
+
+highlights = []
+allergen = []
+
+for item in parsed_ingredients:
+    for alle in allergen:
+        item = item.strip()
+        alle = alle.strip()
+        if (item.contains(alle))
+            allergen.append(item)
