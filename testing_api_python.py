@@ -1,9 +1,10 @@
+#https://devhints.io/xpath
 
 from lxml import html
 import requests
 
 BASE_DIR = "https://www.foodnetwork.com/search/"
-food_name = "waffles"
+food_name = "curry"
 search_query = BASE_DIR + food_name + "-"
 
 search_recipes = requests.get(search_query)
@@ -16,8 +17,14 @@ recipe_response = requests.get("https:" + first_recipe)
 tree2 = html.fromstring(recipe_response.content)
 ingredients = tree2.xpath('//p[@class="o-Ingredients__a-Ingredient"]/text()')
 
-for item in ingredients:
-    
-
 print(ingredients)
 
+parsed_ingredients = []
+
+for item in ingredients:
+    tmp = ''.join([i for i in item if (i.isalpha() or i==' ')])
+    parsed_ingredients.append(tmp.replace(' cups', '').replace(' cup','').replace(' teaspoons', '').replace(' teaspoon', '')\
+        .replace(' tablespoons','').replace(' tablespoon', '').replace(' plus', '').replace(' pinch of', '').replace(' pinch','')\
+            .replace(' stick', '').replace(' for serving', '').replace())
+
+print(parsed_ingredients)
