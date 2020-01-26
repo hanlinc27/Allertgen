@@ -46,5 +46,5 @@ for item in parsed_ingredients:
     for alle in allergen:
         item = item.strip()
         alle = alle.strip()
-        if (item.contains(alle))
+        if (item.contains(alle)):
             allergen.append(item)
