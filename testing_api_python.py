@@ -9,9 +9,13 @@ measures = [' cups ', 'cup ', ' teaspoons ', ' teaspoon ', ' tablespoons ', 'tab
     'minced ', 'diced ', 'diced', ' smashed', ' for oiling the grill grates', 'small', 'lower', 'juiced'\
     , ' zested ', 'shredded ', ' shredded', 'handful']
 
+img_predict = "food" ###TODO: this needs to set as the response from Google Cloud
+if (img_predict == "pad_thai"):
+    food_name = "pad-thai"
+else:
+    food_name = img_predict
 
 BASE_DIR = "https://www.foodnetwork.com/search/"
-food_name = "shawarma"
 search_query = BASE_DIR + food_name + "-"
 
 search_recipes = requests.get(search_query)
