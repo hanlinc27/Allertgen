@@ -1,0 +1,111 @@
+html{
+    font-style: Helvetica;
+}
+
+h2{
+    position: absolute;
+    font-size: 1em;
+    left: 50px;
+    top: 350px;
+}
+
+h1{
+    position: absolute;
+    width: 413px;
+    height: 102px;
+    left: 253px;
+    top: 42px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    
+    color: #000000;
+}
+
+#inner_plate_shadow{
+    position: absolute;
+    width: 128px;
+    height: 120px;
+    left: 148px;
+    top: 153px;
+    
+    background: #EDEDED;
+} 
+
+#inner_plate{
+    position: absolute;
+    width: 117px;
+    height: 110px;
+    left: 153px;
+    top: 158px;
+
+    background: #FBD08F;
+}
+
+/* Rectangle 1 */
+#rectangle_1{
+    position: absolute;
+    width: 304px;
+    height: 309px;
+    left: 110px;
+    top: -10px;
+
+    background: linear-gradient(180deg, rgba(145, 210, 134, 0.11) 12.39%, #91D286 100%);
+    opacity: 0.7;
+    border-radius: 0px 0px 0px 200px;
+}
+
+
+#window_1{
+    position: absolute;
+    width: 321px;
+    height: 230px;
+    left: 50px;
+    top: 101px;
+    
+    background: #F9F9F9;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+/* Window Box 1 */
+
+
+
+
+/* Outer Plate Shadow */
+#outer_plate_shadow{
+    position: absolute;
+    width: 174px;
+    height: 163px;
+    left: 118px;
+    top: 136px;
+    
+    background: #FBAE54;
+}
+
+
+
+/* Outer Plate */
+#outer_plate{
+    position: absolute;
+    width: 169px;
+    height: 158px;
+    left: 127px;
+    top: 134px;
+    
+    background: #FBD08F;
+}
+
+#results_table{
+    position: absolute;
+    width: 321px;
+    height: 292px;
+    left: 50px;
+    top: 370px;
+    
+    background: #F9F9F9;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
